@@ -1,6 +1,10 @@
 # 🏥 Pharma Sales Territory Optimizer
 
-A comprehensive end-to-end data engineering project for pharmaceutical sales territory optimization using Snowflake, PySpark, PuLP, and Streamlit.
+**Live Demo:** https://pharmasalesterritoryoptimizer-iheracruaouep3jdy4ghad.streamlit.app/
+
+[![Deploy Status](https://img.shields.io/badge/Streamlit-Deployed-brightgreen)](https://pharmasalesterritoryoptimizer-iheracruaouep3jdy4ghad.streamlit.app/)
+
+A comprehensive end-to-end data engineering project for pharmaceutical sales territory optimization using Snowflake, Python, PuLP, and Streamlit.
 
 ## Project Overview
 
