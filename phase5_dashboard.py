@@ -31,18 +31,28 @@ st.set_page_config(
 )
 
 # ============================================================
-# CONFIGURATION
+# CONFIGURATION (Uses Streamlit Secrets)
 # ============================================================
 @st.cache_data
 def get_connection_config():
-    return {
-        'account': 'rwcfeut-wb78109',
-        'user': 'SANDHIYABK',
-        'password': 'k66T4jKv_LQDHXe',
-        'warehouse': 'COMPUTE_WH',
-        'database': 'PHARMA_OS_DB',
-        'schema': 'SALES_OPS'
-    }
+    try:
+        return {
+            'account': st.secrets["SF_ACCOUNT"],
+            'user': st.secrets["SF_USER"],
+            'password': st.secrets["SF_PASSWORD"],
+            'warehouse': st.secrets["SF_WAREHOUSE"],
+            'database': st.secrets["SF_DATABASE"],
+            'schema': st.secrets["SF_SCHEMA"]
+        }
+    except:
+        return {
+            'account': 'rwcfeut-wb78109',
+            'user': 'SANDHIYABK',
+            'password': 'k66T4jKv_LQDHXe',
+            'warehouse': 'COMPUTE_WH',
+            'database': 'PHARMA_OS_DB',
+            'schema': 'SALES_OPS'
+        }
 
 # ============================================================
 # DATA LOADING

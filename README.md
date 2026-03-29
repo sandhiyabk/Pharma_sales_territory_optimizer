@@ -21,10 +21,61 @@ Data Synthesis → Snowflake Migration → Doctor Tiering → OR Optimization �
 
 ## Quick Start
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+```bash
+git clone https://github.com/sandhiyabk/Pharma_sales_territory_optimizer.git
+cd Pharma_sales_territory_optimizer
+```
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3. Configure Snowflake Secrets
+Create `.streamlit/secrets.toml`:
+```toml
+[secrets]
+SF_ACCOUNT = "rwcfeut-wb78109"
+SF_USER = "SANDHIYABK"
+SF_PASSWORD = "your_password"
+SF_WAREHOUSE = "COMPUTE_WH"
+SF_DATABASE = "PHARMA_OS_DB"
+SF_SCHEMA = "SALES_OPS"
+```
+
+### 4. Run Phases in Order
+```bash
+python phase1_synthesis.py
+python phase2_snowflake_migration.py
+python phase3_doctor_tiering.py
+python phase4_territory_optimization.py
+streamlit run phase5_dashboard.py
+```
+
+## Deployment
+
+### Deploy to Streamlit Cloud (Free)
+
+1. Push code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Click "Deploy an app"
+4. Select your GitHub repo
+5. Add secrets in the Advanced settings:
+   - `SF_ACCOUNT` = your snowflake account
+   - `SF_USER` = your username
+   - `SF_PASSWORD` = your password
+   - `SF_WAREHOUSE` = COMPUTE_WH
+   - `SF_DATABASE` = PHARMA_OS_DB
+   - `SF_SCHEMA` = SALES_OPS
+6. Click Deploy!
+
+### Deploy to Render (Free)
+
+1. Create `render.yaml` with your app config
+2. Connect GitHub repo
+3. Add environment variables
+4. Deploy
 
 ### 2. Update Credentials
 Edit each phase file and update the Snowflake password:
