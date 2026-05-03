@@ -31,7 +31,7 @@ st.set_page_config(
 )
 
 # ============================================================
-# CONFIGURATION (Uses Streamlit Secrets)
+# CONFIGURATION
 # ============================================================
 @st.cache_data
 def get_connection_config():
@@ -46,9 +46,9 @@ def get_connection_config():
         }
     except:
         return {
-            'account': 'rwcfeut-wb78109',
+            'account': 'chizcdk-zm51873',
             'user': 'SANDHIYABK',
-            'password': 'k66T4jKv_LQDHXe',
+            'password': '9jcwpx9kGwfyAC6',
             'warehouse': 'COMPUTE_WH',
             'database': 'PHARMA_OS_DB',
             'schema': 'SALES_OPS'

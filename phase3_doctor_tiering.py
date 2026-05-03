@@ -23,9 +23,9 @@ warnings.filterwarnings('ignore')
 # CONFIGURATION
 # ============================================================
 SNOWFLAKE_CONFIG = {
-    'account': 'rwcfeut-wb78109',
+    'account': 'chizcdk-zm51873',
     'user': 'SANDHIYABK',
-    'password': 'k66T4jKv_LQDHXe',
+    'password': '9jcwpx9kGwfyAC6',
     'warehouse': 'COMPUTE_WH',
     'database': 'PHARMA_OS_DB',
     'schema': 'SALES_OPS'

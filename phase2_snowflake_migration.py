@@ -21,9 +21,9 @@ warnings.filterwarnings('ignore')
 # CONFIGURATION - UPDATE YOUR CREDENTIALS HERE
 # ============================================================
 SNOWFLAKE_CONFIG = {
-    'account': 'rwcfeut-wb78109',  # From: https://rwcfeut-wb78109.snowflakecomputing.com
+    'account': 'chizcdk-zm51873',
     'user': 'SANDHIYABK',
-    'password': 'k66T4jKv_LQDHXe',
+    'password': '9jcwpx9kGwfyAC6',
     'warehouse': 'COMPUTE_WH',
     'database': 'PHARMA_OS_DB',
     'schema': 'SALES_OPS'
